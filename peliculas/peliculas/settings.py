@@ -25,7 +25,7 @@ SECRET_KEY = 'sizjb=)mn0s3jqh_&2$v17@xo&mrl^g5owd^lfa8!zh0gj7tp-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.33.11']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'catalogo_pelicula',
 ]
 
 MIDDLEWARE = [
