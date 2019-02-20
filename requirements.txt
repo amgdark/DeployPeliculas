@@ -1,1 +1,4 @@
 django==2.0.13
+flake8
+autopep8
+coverage

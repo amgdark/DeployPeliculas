@@ -15,6 +15,10 @@ before_script:
 script: 
   - cd peliculas
   - python manage.py test
-
+  - flake8 --exclude=*migrations*,*settings* .
+  - coverage run --source='.' --omit=*test*,*migrations*,*__init*,*settings*,*apps*,*wsgi* manage.py test
+  - coverage report
+  - coverage html
+  
 notifications:
 email: false

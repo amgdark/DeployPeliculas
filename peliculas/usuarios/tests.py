@@ -5,5 +5,5 @@ from django.test import TestCase
 
 class TestUsuarios(TestCase):
 
-	def test_usuarios_smoke(self):
-		self.assertEquals(True, True)
+    def test_usuarios_smoke(self):
+        self.assertEquals(True, True)
